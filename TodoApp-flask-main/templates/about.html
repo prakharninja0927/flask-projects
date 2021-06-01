@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock title %} 
+{% block body %}
+<!-- Header -->
+  
+  <!-- Page Content -->
+  <div class="container " style="margin-top: 150px;">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-5 col-md-6 mb-4">
+        <div class="card border-0 ">
+          <img src="{{ url_for('static', filename='images/flask.png') }}" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-5 col-md-6 mb-4">
+            <h1>About</h1>
+            <p>
+                I have made this todo application using Flask which is one of the best framework of python. I have also took some help of
+                bootstrap which is well popular CSS framework
+            </p>   
+            <p>Flask is a web framework. This means flask provides you with tools, 
+                libraries and technologies that allow you to build a web application. This web application can be some web pages, a blog,
+                 a wiki or go as big as a web-based calendar application or a commercial website.</p>
+            <p>
+                In this application i also use SQLAlchemy library for storage purpose and from it i have used Sqlite db because it is 
+                very simple to use interms of adding data or delete as well as retriving data.
+            </p>
+             <h5>This is Awsome Framework of python !!!</h5> 
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <!-- /.container -->
+
+
+{% endblock body %}
